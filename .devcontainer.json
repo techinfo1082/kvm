@@ -1,0 +1,15 @@
+{
+  "name": "achour-tech-pro-KVM",
+  "image": "ubuntu:22.04",
+
+  "runArgs": [
+    "--device=/dev/kvm"
+  ],
+
+  "postCreateCommand": "apt update && apt install -y qemu-kvm qemu-utils wget htop curl vim",
+
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
